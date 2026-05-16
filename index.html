@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Rule City</title>
+<meta name="description" content="Rule City - FiveM Roleplay Server" />
+<meta name="keywords" content="Rule City, FiveM, Roleplay, RTG" />
+<meta itemprop="image" content="https://miaoda-edit-image.s3cdn.medo.dev/9ltu8otl9lvl/IMG-9o3gl1zy1xxc.png" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Rule City" />
+<meta property="og:description" content="Rule City - FiveM Roleplay Server" />
+<meta property="og:image" content="https://miaoda-edit-image.s3cdn.medo.dev/9ltu8otl9lvl/IMG-9o3gl1zy1xxc.png" />
+<meta property="og:url" content="www.rulecity.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Rule City" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Rule City" />
+<meta name="twitter:description" content="Rule City - FiveM Roleplay Server" />
+<meta name="twitter:image" content="https://miaoda-edit-image.s3cdn.medo.dev/9ltu8otl9lvl/IMG-9o3gl1zy1xxc.png" />
+<meta name="twitter:url" content="www.rulecity.com/" />
+
+<link rel="icon" href="https://miaoda-edit-image.s3cdn.medo.dev/9ltu8otl9lvl/IMG-9o3gl1zy1xxc.png" />
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://miaoda-edit-image.s3cdn.medo.dev/9ltu8otl9lvl/IMG-9o3gl1zy1xxc.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" crossorigin src="https://miaoda-op-sourcecode.s3.us-west-2.amazonaws.com/source_code/projects/conv-9ltu8otl9lvk_1778188556692/assets/index-ClBuVjlu.js"></script>
+    <link rel="stylesheet" crossorigin href="https://miaoda-op-sourcecode.s3.us-west-2.amazonaws.com/source_code/projects/conv-9ltu8otl9lvk_1778188556692/assets/index-BupP3sod.css">
+    <script>
+              (function () {
+                const redirect = new URLSearchParams(location.search).get('redirect');
+                if (redirect && redirect !== location.pathname) {
+                  history.replaceState(null, '', redirect);
+                }
+              })();
+            </script>
+    <link rel="stylesheet" id="fonts-code" href="https://miaoda-font.cdn.bcebos.com/static/font_v1/fonts-code.css">
+
+    <style>
+      /* Rule City - Red & Black Theme */
+      :root {
+        --rc-red: #cc0000;
+        --rc-red-dark: #990000;
+        --rc-red-light: #ff1a1a;
+        --rc-black: #0a0a0a;
+        --rc-dark: #111111;
+        --rc-gray: #1a1a1a;
+      }
+
+      body {
+        background-color: var(--rc-black) !important;
+        color: #ffffff !important;
+      }
+
+      /* Override primary colors to red/black */
+      a, a:visited {
+        color: var(--rc-red-light) !important;
+      }
+
+      button, .btn, [class*="button"] {
+        background-color: var(--rc-red) !important;
+        border-color: var(--rc-red-dark) !important;
+        color: #ffffff !important;
+      }
+
+      button:hover, .btn:hover {
+        background-color: var(--rc-red-light) !important;
+      }
+
+      /* Nav / header */
+      header, nav, [class*="header"], [class*="nav"] {
+        background-color: var(--rc-black) !important;
+        border-bottom: 2px solid var(--rc-red) !important;
+      }
+
+      /* Cards / sections */
+      [class*="card"], [class*="panel"], section {
+        background-color: var(--rc-dark) !important;
+        border-color: var(--rc-red-dark) !important;
+      }
+
+      /* Highlights / accents */
+      [class*="accent"], [class*="highlight"], [class*="active"] {
+        color: var(--rc-red-light) !important;
+        border-color: var(--rc-red) !important;
+      }
+
+      /* Footer */
+      footer, [class*="footer"] {
+        background-color: var(--rc-black) !important;
+        border-top: 2px solid var(--rc-red) !important;
+      }
+
+      /* Copyright text override via JS below */
+    </style>
+
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script id="md-click">
+              window.mdClick = e => {
+                const target = e.target;
+                const {href, target: linkTarget} = target.dataset;
+                const appType = 'web';
+                const isBlank = linkTarget === '_blank';
+
+                if (!href) return;
+
+                e.stopPropagation();
+                e.preventDefault();
+
+                if (isBlank || href.startsWith('http')) {
+                  let finalHref = href;
+                  if (appType === 'miniapp' && !href.startsWith('http')) {
+                    finalHref = window.location.href.split('#')[0] + '#/' + href;
+                  }
+                  window.open(finalHref, linkTarget || '_self');
+                  return;
+                }
+
+                const finalHref = href.startsWith('/') ? href : '/' + href;
+                if (appType === 'miniapp') {
+                  window.location.hash = finalHref;
+                  window.dispatchEvent(new HashChangeEvent('hashchange'));
+                } else {
+                  window.history.pushState({}, '', finalHref);
+                  window.dispatchEvent(new Event('popstate'));
+                }
+              };
+              document.addEventListener('click', window.mdClick, true);
+            </script>
+
+    <script id="iframe-onerror-catcher">
+              const observer = new PerformanceObserver((list) => {
+                list.getEntries().forEach((entry) => {
+                  if (entry.initiatorType === 'script' && entry.responseStatus >= 400) {
+                    window.parent.postMessage({
+                      type: "RESOURCE_LOAD_ERROR",
+                      name: entry.name,
+                      status: entry.responseStatus
+                    }, "*");
+                    console.warn('[iframe-error] Resource failed:', entry.name, entry.responseStatus);
+                  }
+                });
+              });
+              observer.observe({ type: 'resource', buffered: true });
+            </script>
+
+    <!-- Replace copyright text after page loads -->
+    <script id="rc-copyright-patcher">
+      (function patchCopyright() {
+        function replaceCopyrightText() {
+          const walker = document.createTreeWalker(
+            document.body,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+          );
+          let node;
+          while ((node = walker.nextNode())) {
+            const text = node.nodeValue;
+            if (
+              text &&
+              (text.includes('RTG') ||
+               text.includes('Miaoda') ||
+               text.includes('miaoda') ||
+               text.includes('©') ||
+               text.toLowerCase().includes('copyright') ||
+               text.toLowerCase().includes('all rights reserved'))
+            ) {
+              const newText = text
+                .replace(/RTG\s*Cfw/gi, 'Rule City')
+                .replace(/RTG/gi, 'Rule City')
+                .replace(/Miaoda/gi, 'Rule City')
+                .replace(/miaoda/gi, 'Rule City')
+                .replace(/All Rights Reserved/gi, '© 2025 Rule City. All Rights Reserved.');
+              if (newText !== text) {
+                node.nodeValue = newText;
+              }
+            }
+          }
+        }
+
+        // Run on load and watch for dynamic content
+        window.addEventListener('load', replaceCopyrightText);
+        setTimeout(replaceCopyrightText, 1000);
+        setTimeout(replaceCopyrightText, 3000);
+
+        const obs = new MutationObserver(() => replaceCopyrightText());
+        obs.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
+
+  <script>
+  (function () {
+    const script = document.createElement('script');
+    script.src = 'https://miaoda-resource-static.s3cdn.medo.dev/runtime-inject/domain-static/online/1.0.59.1/static/miaoda-external.js?tm=' + new Date().getTime();
+    script.async = true;
+    script.onload = function () {
+      window.miaoda.init({
+        appId: 'app-9ltu8otl9lvl',
+        type: 'WEB',
+        share: {
+            title: "Rule City - FiveM Roleplay Server",
+            desc: "Welcome to Rule City — the ultimate FiveM roleplay experience.",
+            image: "https://miaoda-edit-image.s3cdn.medo.dev/9ltu8otl9lvl/IMG-9njx0ecx8v0g.png"
+        }
+      });
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
